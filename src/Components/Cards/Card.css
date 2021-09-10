@@ -1,0 +1,31 @@
+.allcard{
+  margin-bottom: 5%;
+}
+
+.card-item {
+  background-color: transparent;
+  border: none;
+  padding: 5%;
+  margin-top: 4%;
+  transition: linear 0.1s;
+}
+
+.card-item:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
+}
+
+.card-title {
+  text-decoration: none;
+  color: #28d;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card-text {
+  color:#000;
+  font-family: cursive;
+}
+
+.heading {
+  color: #28d;
+}
