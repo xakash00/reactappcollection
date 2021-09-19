@@ -42,7 +42,7 @@ const MemeGenerator = (props) => {
             Daily Memes
           </h3>
 
-          <div class="card-header">
+          <div className="card-header">
             <h3 style={{ color: props.mode === "light" ? "#000" : "#fff" }}>
               {meme.title}
             </h3>
