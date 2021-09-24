@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Jumbotron from "./Jumbotron";
 import "./RandomQuotes.css";
 
-const RandomQuotes = () => {
+const RandomQuotes = (props) => {
   const [data, setData] = useState({
     text: "",
     author: "",
@@ -43,6 +43,7 @@ const RandomQuotes = () => {
     <>
       <div className="quoteBox">
         <Jumbotron
+        mode={props.mode}
           text={data.text}
           author={data.author}
           tweetQuote={tweetQuote}

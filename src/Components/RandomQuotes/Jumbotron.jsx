@@ -4,7 +4,14 @@ const Jumbotron = (props) => {
   return (
     <>
       <div>
-        <h1 className="titleQuote text-center my-5">Quote Generator</h1>
+        <h1
+          style={{
+            color: props.mode === "light" ? "#28d" : "#00ffff",
+          }}
+          className="titleQuote text-center my-5"
+        >
+          Quote Generator
+        </h1>
         <div className="jumbotron">
           <div>
             <div className="container">

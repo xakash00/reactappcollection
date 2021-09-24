@@ -60,7 +60,7 @@ const MemeGenerator = (props) => {
           >
             <div className="container"></div>
             <div>
-              <img className="img-fluid" src={meme.url} alt="meme" />
+              <img className="img-fluid" src={meme.url} alt="memes" />
             </div>
           </div>
         </div>

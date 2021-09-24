@@ -3,19 +3,17 @@ import axios from "axios";
 import ReactAudioPlayer from "react-audio-player";
 import "./Dictionary.css";
 
-const DictionarysApi = () => {
+const DictionarysApi = (props) => {
   const [wordFromButtonClick, setWordFromButtonClick] = useState("welcome");
   const [search, setSearch] = useState("welcome");
-  const [words, setWords] = useState([
-    {
-      word: "",
-      meaning: "",
-      phonetics: "",
-      syno: "",
-      sound: "",
-      example: "",
-    },
-  ]);
+  const [words, setWords] = useState({
+    word: "",
+    meaning: "",
+    phonetics: "",
+    syno: [],
+    sound: "",
+    example: "",
+  });
 
   const handleClick = () => {
     setWordFromButtonClick(search);
@@ -43,7 +41,14 @@ const DictionarysApi = () => {
   return (
     <>
       <div className="maincont container">
-        <h1 className="titleDict text-center">Dictionary App</h1>
+        <h1
+          style={{
+            color: props.mode === "light" ? "#28d" : "#00ffff",
+          }}
+          className="titleDict text-center"
+        >
+          Dictionary App
+        </h1>
         <div className="jumbotron">
           <input
             className="form-control-sm mx-2"
@@ -70,6 +75,25 @@ const DictionarysApi = () => {
             <p className="placed">
               Example :<span className="example"> {words.example}</span>
             </p>
+            <p>
+              <button
+                className="btn btn-info"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseExample"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                Synonyms
+              </button>
+            </p>
+            <div className="collapse" id="collapseExample">
+              <div className="card card-body">
+                {words.syno.map((item) => (
+                  <li>{item}</li>
+                ))}
+              </div>
+            </div>
             <hr className="my-4" />
             <ReactAudioPlayer
               className="audio"

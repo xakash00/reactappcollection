@@ -12,8 +12,8 @@ const Routing = (props) => {
       <Switch>
         <Route exact path="/" component={() => <Home mode={props.mode} />} />
         <Route exact path="/weather" component={WeatherApi} />
-        <Route exact path="/dictionary" component={DictionarysApi} />
-        <Route exact path="/quotes" component={RandomQuotes} />
+        <Route exact path="/dictionary" component={()=><DictionarysApi mode={props.mode}/>} />
+        <Route exact path="/quotes" component={()=><RandomQuotes mode={props.mode}/>} />
         <Route exact path="/meme" component={()=><MemeGen mode={props.mode}/>} />
         <Redirect to="/" />
       </Switch>
