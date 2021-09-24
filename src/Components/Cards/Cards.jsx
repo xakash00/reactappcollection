@@ -6,7 +6,7 @@ const Cards = (props) => {
   return (
     <>
       <div className="col-md-3 col-10 mx-auto">
-        <div className="cards card-item">
+        <div className="card card-item" style={{background:"none"}}>
           <NavLink to={props.link}>
             <img className="card-img-top" src={props.imgsrc} alt="Card cap" />
           </NavLink>
