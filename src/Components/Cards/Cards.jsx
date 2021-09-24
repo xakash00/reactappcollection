@@ -6,7 +6,7 @@ const Cards = (props) => {
   return (
     <>
       <div className="col-md-3 col-10 mx-auto">
-        <div className="card card-item">
+        <div className="cards card-item">
           <NavLink to={props.link}>
             <img className="card-img-top" src={props.imgsrc} alt="Card cap" />
           </NavLink>
@@ -20,7 +20,7 @@ const Cards = (props) => {
             </h5>
             <p
               className="card-text text-center"
-              style={{ color: props.mode === "dark" ? "#fff" : "#000" }}
+              style={{ color: props.mode === "light" ? "#000" : "#fff" }}
             >
               {props.para}
             </p>
