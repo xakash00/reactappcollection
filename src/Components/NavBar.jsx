@@ -53,11 +53,16 @@ const NavBar = (props) => {
               </li>
               <li className="nav-item mx-3">
                 <NavLink className="nav-link active" to="/meme">
-               Daily Memes
+                  Reddit Memes
                 </NavLink>
               </li>
             </ul>
-            <div className="form-check form-switch">
+            <div
+              className="form-check form-switch"
+              style={{
+                color: props.mode === "light" ? "#000" : "#fff",
+              }}
+            >
               <input
                 onClick={props.toggleMode}
                 className="form-check-input"
@@ -68,11 +73,23 @@ const NavBar = (props) => {
                 className="form-check-label"
                 htmlFor="flexSwitchCheckDefault"
               >
-                {`${
-                  props.mode === "light"
-                    ? "Enable Dark Mode"
-                    : "Enable Light Mode"
-                }`}
+                {props.mode === "light" ? (
+                  <span
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="Enable Dark Mode"
+                  >
+                    <i className="fa fa-moon"></i>
+                  </span>
+                ) : (
+                  <span
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="Enable Light Mode"
+                  >
+                    <i className="fa fa-sun"></i>
+                  </span>
+                )}
               </label>
             </div>
           </div>

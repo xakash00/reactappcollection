@@ -12,7 +12,7 @@ const CardData = [
   },
   {
     imgsrc: img2,
-    title: "Dictionary Api",
+    title: "Dictionary App",
     para: "Learn English Words, with features like meaning, phonetics, example and audio",
     link: "/dictionary",
   },
@@ -24,8 +24,8 @@ const CardData = [
   },
   {
     imgsrc: img4,
-    title: "Daily Memes",
-    para: "1000's of funny memes that will make you and your friends LOL!",
+    title: "Reddit Memes",
+    para: "1000's of Reddit memes that will make you and your friends LOL!",
     link: "/meme",
   },
 ];

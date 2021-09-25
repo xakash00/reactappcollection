@@ -39,7 +39,7 @@ const MemeGenerator = (props) => {
             }}
             className="card-title title"
           >
-            Daily Memes
+            Reddit Memes
           </h3>
 
           <div className="card-header">

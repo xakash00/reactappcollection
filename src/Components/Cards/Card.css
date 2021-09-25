@@ -2,6 +2,11 @@
   margin-bottom: 5%;
 }
 
+#cards{
+border:none;
+background: none;
+}
+
 .card-item {
   background-color: none;
   border: none;

@@ -3,24 +3,23 @@ body {
   background-color: whitesmoke;
 }
 
-.homepage{
+.homepage {
   margin-bottom: 10%;
 }
 
 .navbar-brand {
-  margin-left:2%;
+  margin-left: 2%;
   color: #28d !important;
   font-weight: bolder;
   font-size: 30px;
-  transition:linear 0.1s;
+  transition: linear 0.1s;
 }
-.navbar-brand:hover{
-  transform:scale(1.1);
-  border-bottom:1px solid #dc143c ;
+.navbar-brand:hover {
+  transform: scale(1.1);
 }
 
-.logo{
-  width:13%; 
+.logo {
+  width: 13%;
 }
 
 .nav-item {
@@ -31,14 +30,19 @@ body {
   border-bottom: 1px solid #dc143c;
 }
 
+.fa-sun {
+  color: #ffff00;
+}
 
+.fa-moon{
+  color:082c6c;
+}
 
 /* footer css  */
 
 .footer-dark {
   padding: 25px 0;
   color: #f0f9ff;
-  background-color: #28d;
 }
 
 .footer-dark h3 {

@@ -5,6 +5,7 @@ import WeatherApi from "./WeatherApp/WeatherApi";
 import DictionarysApi from "./Dictionary/DictionarysApi";
 import RandomQuotes from "./RandomQuotes/RandomQuotes"
 import MemeGen from "./MemeGenerator.jsx/MemeGen";
+import ScrollToTop from "../ScrollToTop";
 
 const Routing = (props) => {
   return (
@@ -17,6 +18,7 @@ const Routing = (props) => {
         <Route exact path="/meme" component={()=><MemeGen mode={props.mode}/>} />
         <Redirect to="/" />
       </Switch>
+      <ScrollToTop />
     </>
   );
 };

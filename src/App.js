@@ -22,7 +22,7 @@ const App = () => {
     <>
       <NavBar mode={mode} toggleMode={toggleMode} />
       <Routing mode={mode} />
-      <Footer />
+      <Footer mode={mode} />
     </>
   );
 };

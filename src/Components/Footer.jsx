@@ -1,11 +1,12 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "../index.css";
 
 const Footer = (props) => {
   return (
     <>
       <div>
-        <div className="footer-dark fixed-bottom-0">
+        <div className="footer-dark fixed-bottom-0" style={{backgroundColor:props.mode==="light"?"#28d":"#000"}}>
           <footer>
             <div className="container">
               <div className="row">
@@ -38,6 +39,31 @@ const Footer = (props) => {
                       >
                         Twitter
                       </a>
+                    </li>
+                  </ul>
+                </div>
+                <div className="col-sm-6 col-md-3 item">
+                <h3>Explore</h3>
+                  <ul>
+                    <li>
+                     <NavLink to = "/weather">
+                        Weather App
+                     </NavLink>
+                    </li>
+                    <li>
+                    <NavLink to = "/dictionary">
+                        Dictionary App
+                     </NavLink>
+                    </li>
+                    <li>
+                    <NavLink to = "/quotes">
+                        Quotes App
+                     </NavLink>
+                    </li>
+                    <li>
+                    <NavLink to = "/meme">
+                       Reddit Memes
+                     </NavLink>
                     </li>
                   </ul>
                 </div>
