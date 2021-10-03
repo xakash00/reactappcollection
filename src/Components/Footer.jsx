@@ -70,8 +70,8 @@ const Footer = (props) => {
                 <div className="col-md-6 item text">
                   <h3>Akash's App</h3>
                   <p>
-                    This App is just a compilation of ReactJs components i
-                    created to practice my front-end web development skills.
+                    This App is a compilation of ReactJs applications I
+                    created to potray my front-end web development skills.
                   </p>
                 </div>
               </div>
