@@ -90,7 +90,7 @@ const DictionarysApi = (props) => {
             <div className="collapse" id="collapseExample">
               <div className="card card-body">
                 {words.syno.map((item) => (
-                  <li>{item}</li>
+                  <li key={item}>{item}</li>
                 ))}
               </div>
             </div>
